@@ -1,0 +1,52 @@
+[{
+        "id": 1,
+        "title": "口碑好物"
+    }, {
+        "id": 2,
+        "img": "../img/口碑好物.webp",
+        "content": "口碑好物"
+    }, {
+        "id": 3,
+        "img": "../img/抑菌除螨.webp",
+        "content": "抑菌除螨"
+    },
+    {
+        "id": 4,
+        "img": "../img/春夏好物.webp",
+        "content": "春夏好物"
+    },
+    {
+        "id": 5,
+        "img": "../img/主题床品.webp",
+        "content": "主题床品"
+    },
+    {
+        "id": 6,
+        "img": "../img/北欧原木.webp",
+        "content": "北欧原木"
+    },
+    {
+        "id": 7,
+        "img": "../img/餐厨爆款清单.webp",
+        "content": "餐厨爆款清单"
+    },
+    {
+        "id": 8,
+        "title": "床上用品"
+    },
+    {
+        "id": 9,
+        "img": "../img/床品件套.webp",
+        "content": "床品件套"
+    },
+    {
+        "id": 10,
+        "img": "../img/被枕盖毯.webp",
+        "content": "被枕盖毯"
+    },
+    {
+        "id": 2,
+        "img": "../img/床垫床褥.webp",
+        "content": "床垫床褥"
+    }
+]
