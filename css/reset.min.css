@@ -242,3 +242,6 @@ button:-moz-focusring,
     content: "";
     clear: both
 }
+*{
+    box-sizing: border-box;
+}
