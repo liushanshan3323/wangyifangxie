@@ -393,22 +393,23 @@
 /* banner */
 .banner-one {
     position: relative;
-    box-sizing: border-box;
     width: 100%;
-    height: 410px;
+    height: 420px;
     overflow: hidden;
     margin-top: 150px;
 }
 
 .banner-one .wrapper {
     position: relative;
+    width: 100%;
     height: 100%;
 }
 
-.banner-one .wrapper .slider {
+.banner-one .wrapper .slide{
     position: absolute;
     top: 0;
-    left: -20%;
+    left:0;
+    width: 100%;
     height: 100%;
     overflow: hidden;
     z-index: 0;
@@ -417,13 +418,15 @@
 }
 
 
-.banner-one .wrapper .slider:nth-child(1) {
+.banner-one .wrapper .slide:nth-child(1) {
     z-index: 1;
     opacity: 1;
 }
 
-.banner-one .wrapper .slider img {
+.banner-one .wrapper .slide img {
     height: 100%;
+    position: relative;
+    left: -15%;
 }
 
 /* 分页器 */
@@ -441,10 +444,16 @@
     width: 8px;
     height: 8px;
     cursor: pointer;
-    position: relative;
+    font-size: 0;
+    line-height: 0;
+    border: 1px solid #cecece;
+    background: #fff;
+    font-size: 0;
+    line-height: 0;
+    border-radius: 50%;
 }
 
-.pagination li button {
+/* .pagination li button {
     font-size: 0;
     line-height: 0;
     display: block;
@@ -454,9 +463,9 @@
     cursor: pointer;
     border: 1px solid #cecece;
     background: #fff;
-}
+} */
 
-.pagination li.active button {
+.pagination li.active{
     box-shadow: 0 0 0 4px #dfcead;
     border-radius: 50%;
     background: #a7936e;
@@ -464,41 +473,35 @@
 }
 
 /* 左右按钮 */
-.arrow_box {
+.arrow {
     position: absolute;
     z-index: 998;
     top: 53%;
     margin-top: -22.5px;
-    cursor: pointer;
-}
-
-.arrow_box.changeLeft {
-    left: 8%;
     width: 60px;
     height: 55px;
+    cursor: pointer; 
     background: url(../img/arrow.webp) no-repeat;
+}
+
+.arrow.changeLeft {
+    left: 156px;
     background-position: 9px -5252px;
-    background-color: #e2c199;
-    border-radius: 50%;
 }
 
-.arrow_box.changeLeft:hover {
-    background-color: #cc9756;
-}
-
-.arrow_box.changeRight {
-    right: 8%;
-    width: 60px;
-    height: 55px;
-    background: url(../img/arrow.webp) no-repeat;
+.arrow.changeRight {
+    right: 156px;
     background-position: 9px -5471px;
-    background-color: #e2c199;
+}
+.arrow.arrow.changeLeft,.arrow.changeRight{
+      background-color: #e2c199;
     border-radius: 50%;
 }
-
-.arrow_box.changeRight:hover {
+.arrow.changeLeft:hover,.arrow.changeRight:hover {
     background-color: #cc9756;
 }
+
+/* 新品首发 */
 
 .new_arrival {
     box-sizing: border-box;
@@ -673,16 +676,16 @@ a {
     text-decoration: line-through;
 }
 
-.reveal_box .arrow_box {
+.reveal_box .arrow {
     top: 245px;
 }
 
-.reveal_box .arrow_box.changeLeft {
+.reveal_box .arrow.changeLeft {
     background-color: #e7e2d7;
     left: -75px;
 }
 
-.reveal_box .arrow_box.changeRight {
+.reveal_box .arrow.changeRight {
     right: -75px;
 }
 
@@ -1647,4 +1650,15 @@ html.csstransitions .m-flashSale {
 }
 button{
     border: 0;
+}
+.m-focusSlick .slick-next:hover, .m-focusSlick .slick-prev:hover {
+    background-color: #B19D79;
+}
+.icon-normal-slick-rightRound {
+    background-position: 0 -5628px;
+    height: 50px;
+    width: 50px;
+}
+.m-focusSlick .slick-next {
+    right: 10px;
 }
