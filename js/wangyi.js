@@ -2,7 +2,7 @@
 导航栏下面的轮播图
  */
 $(function () {
-	let $container = $('.banner-one'),
+	let $container = $('.container'),
 		$slideList = $container.find('.slide'),
 		$paginationList = $container.find('.pagination>li'),
 		$changeLeft = $container.children('.changeLeft'),
