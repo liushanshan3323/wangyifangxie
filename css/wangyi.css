@@ -494,14 +494,15 @@
 }
 
 /* 新品首发 */
-
-.new_arrival {
-    box-sizing: border-box;
+.m-newProducts {
     height: 510px;
-    margin-top: 30px;
-    position: relative;
+    margin-top: 30px!important;
 }
 
+a {
+    color: #333;
+}
+/* 人气推荐 */
 .new_title {
     padding-bottom: 20px;
 }
@@ -517,14 +518,6 @@
     font-weight: 700;
     margin-right: 20px;
     color: #333;
-    line-height: 1;
-}
-
-.new_arrival .new_title .title_left small {
-    color: #333333;
-    padding-top: 13px;
-    display: inline-block;
-    font-size: 14px;
     line-height: 1;
 }
 
@@ -547,145 +540,10 @@
 .new_title .title_right a:hover {
     color: #a7936e;
 }
-
-.actual_box {
-    position: relative;
-    z-index: 0;
-    display: block;
-    overflow: hidden;
-    margin: 0;
-    padding: 0;
-}
-
-.total_box {
-    position: relative;
-    top: 0;
-    left: 0;
-    display: block;
-}
-
-.single_box {
-    width: 265px;
-    height: 100%;
-    margin-right: 10px;
-    float: left;
-    text-align: center;
-}
-
-.single_top a {
-    color: #333333;
-}
-
-.single_top {
-    position: relative;
-    margin-bottom: 8px;
-}
-
-.smallBox .img {
-    width: 265px;
-    height: 265px;
-}
-
-.single_top .img {
-    transition: transform 1s;
-    background-color: #f4f4f4;
-    color: #f4f4f4;
-    display: block;
-    margin: 0 auto;
-}
-
-.big_box {
-    display: none;
-    position: absolute;
-    top: 0;
-    left: 0;
-}
-
-.single_box:hover .big_box {
-    display: block;
-}
-
-.single_box:hover {
-    background-color: #f4f0ea;
-    box-shadow: 2px 2px 8px rgba(0, 0, 0, .2);
-}
-
-.single_bottom {
-    font-size: 0;
-}
-
-.single_bottom .prdtTage {
-    margin: 0 auto 3px;
-    width: 200px;
-    height: 20px;
-    color: #fff;
-    overflow: hidden;
-}
-
-.single_bottom .itemTage {
-    font-size: 12px;
-    background-color: #e36844;
-    height: 20px;
-    line-height: 20px;
-    color: #fff;
-    padding: 0 5px;
-    display: inline-block;
-    margin-left: 6px;
-}
-
-.single_bottom .name {
-    width: 166px;
-    margin: 0 auto 4px;
-    max-height: 40px;
-    line-height: 20px;
-    overflow: hidden;
-    font-size: 12px;
-}
-
-a {
-    color: #333;
-}
-
-.single_bottom .price {
-    padding: 1px 0 9px;
-    font-size: 13px;
-    line-height: 13px;
-    color: #d4282d;
-    margin: 0;
-    text-align: center;
-}
-
-.single_bottom span {
-    display: inline-block;
-    overflow: hidden;
-    padding: 0;
-}
-
-.single_bottom .counterPrice {
-    font-size: 12px;
-    color: #999;
-    margin-left: 6px;
-    text-decoration: line-through;
-}
-
-.reveal_box .arrow {
-    top: 245px;
-}
-
-.reveal_box .arrow.changeLeft {
-    background-color: #e7e2d7;
-    left: -75px;
-}
-
-.reveal_box .arrow.changeRight {
-    right: -75px;
-}
-
 .reco_box {
     background-color: #f4f0ea;
     padding: 60px 0;
-}
-
+} 
 .second {
     float: left;
     padding-left: 13px;
