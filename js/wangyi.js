@@ -9,7 +9,7 @@ $(function () {
 		$changeRight = $container.children('.changeRight');
 	let step = 0,
 		prev = 0,
-		interval = 1000,
+		interval = 5000,
 		autoTimer = null,
 		len = $slideList.length;
 
