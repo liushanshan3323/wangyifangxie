@@ -2556,7 +2556,6 @@
         <a href="javascript:;" class="arrow changeLeft"></a>
         <a href="javascript:;" class="arrow changeRight"></a>
     </div>
-    </div>
     <!-- 新品首发 -->
     <div class="m-indexCates m-newProducts">
         <div class="g-row">
@@ -4214,7 +4213,7 @@
         </div>
     </div>
     <!-- 人气推荐 -->
-    <div class="m-indexPopularItem">
+    <div class="m-indexPopularItem" id="m-indexPopularItem">
         <div class="g-row clearfix">
             <div class="m-commonHeader clearfix">
                 <div class="f-left lh1 clearfix">
@@ -4240,345 +4239,652 @@
                     </a>
                 </div>
             </div>
-            <div class="showContainer">
-                <div class="m-product popularItem m-popularItem">
-                    <div class="hd">
-                        <a href="javascript:;">
-                            <div style="width: 100%;height: 100%;">
-                                <img src="./img/热销1.webp" alt="" class="img white">
-                            </div>
-                            <div class="colorNum" style="display: none;">
-                            </div>
-                            <div class="promBanner" style="background-image: url(img/promBanner.png);">
-                                <div class="promTitle" style="background-image: url(img/promtitle.webp);">
-                                    <div class="title">
-                                        <span>母亲节特惠</span>
-                                    </div>
-                                    <div class="subTitle">
-                                        <span style="vertical-align: middle;">
-                                            ￥759
-                                        </span>
-                                    </div>
-                                </div>
-                                <div class="promContent">
-                                    仅剩4天
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="bd">
-                        <div class="prdtTage">
-                            <span class="m_itemTag">
-                                母亲节特惠
-                            </span>
-                        </div>
-                        <h4 class="name">
+            <section class="active">
+                <div class="showContainer">
+                    <div class="m-product popularItem m-popularItem">
+                        <div class="hd">
                             <a href="javascript:;">
-                                <span></span>
-                                <span>15分钟快速救脸，射频多功能美容仪</span>
+                                <div style="width: 100%;height: 100%;">
+                                    <img src="./img/热销1.webp" alt="" class="img white">
+                                </div>
+                                <div class="colorNum" style="display: none;">
+                                </div>
+                                <div class="promBanner" style="background-image: url(img/promBanner.png); display: none;">
+                                    <div class="promTitle" style="background-image: url(img/promtitle.webp);">
+                                        <div class="title">
+                                            <span></span>
+                                        </div>
+                                        <div class="subTitle">
+                                            <span style="vertical-align: middle;">
+                                                
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div class="promContent">
+                                    </div>
+                                </div>
                             </a>
-                        </h4>
-                        <p class="price">
-                            <span class="retailPrice">
-                                <span>￥</span>
-                                <span>759</span>
-                            </span>
-                            <span class="counterPrice">
-                                <span>￥</span>
-                                <span>899</span>
-                            </span>
-                        </p>
+                        </div>
+                        <div class="bd">
+                            <div class="prdtTage">
+                                <span class="m_itemTag">
+                                </span>
+                            </div>
+                            <h4 class="name">
+                                <a href="javascript:;">
+                                    <span></span>
+                                    <span>15分钟快速救脸，射频多功能美容仪</span>
+                                </a>
+                            </h4>
+                            <p class="price">
+                                <span class="retailPrice">
+                                    <span>￥</span>
+                                    <span>899</span>
+                                </span>
+                                <span class="counterPrice">
+                                    <span></span>
+                                    <span></span>
+                                </span>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="m-product popularItem m-popularItem">
+                        <div class="hd">
+                            <a href="javascript:;">
+                                <div style="width: 100%;height: 100%;">
+                                    <img src="./img/甄选爆款.webp" alt="" class="img white">
+                                </div>
+                                <div class="colorNum" style="display: none;">
+                                </div>
+                                <div class="promBanner" style="background-image: url(img/promBanner.png); display: none;">
+                                    <div class="promTitle" style="background-image: url(img/promtitle.webp); display: none;">
+                                        <div class="title">
+                                            <span></span>
+                                        </div>
+                                        <div class="subTitle">
+                                            <span style="vertical-align: middle;">
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div class="promContent">
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="bd">
+                            <div class="prdtTage">
+                                <span class="m-itemTag" style="display: none;"></span>
+                                <span class="m-itemTag"style="display: none;"></span>
+                            </div>
+                            <h4 class="name">
+                                <a href="javascript:;">
+                                    <span></span>
+                                    <span>紫外线除螨，N620除螨仪</span>
+                                </a>
+                            </h4>
+                            <p class="price">
+                                <span class="retailPrice">
+                                    <span>￥</span>
+                                    <span>499</span>
+                                </span>
+                                <span class="counterPrice">
+                                    <span></span>
+                                    <span>499</span>
+                                </span>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="m-product popularItem m-popularItem">
+                        <div class="hd">
+                            <a href="javascript:;">
+                                <div style="width: 100%;height: 100%;">
+                                    <img src="./img/热销3.webp" alt="" class="img white">
+                                </div>
+                                <div class="colorNum" style="display: block;">
+                                    木浆材质
+                                </div>
+                                <div class="promBanner">
+                                    <div class="promTitle">
+                                        <div class="title">
+                                            <span></span>
+                                        </div>
+                                        <div class="subTitle">
+                                            <span style="vertical-align: middle;">
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div class="promContent">
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="bd">
+                            <div class="prdtTage">
+                                <span>
+                                </span>
+                            </div>
+                            <h4 class="name">
+                                <a href="javascript:;">
+                                    <span></span>
+                                    <span>16件装 避免细菌残留懒人抹布超值组</span>
+                                </a>
+                            </h4>
+                            <p class="price">
+                                <span class="retailPrice">
+                                    <span>￥</span>
+                                    <span>176</span>
+                                </span>
+                                <span class="counterPrice">
+                                    <span></span>
+                                    <span></span>
+                                </span>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="m-product popularItem m-popularItem ">
+                        <div class="hd">
+                            <a href="javascript:;">
+                                <div style="width: 100%;height: 100%;">
+                                    <img src="./img/热销5.webp" alt="" class="img white">
+                                </div>
+                                <div class="colorNum" style="display: block;">
+                                    2个口味
+                                </div>
+                                <div class="promBanner">
+                                    <div class="promTitle">
+                                        <div class="title">
+                                            <span></span>
+                                        </div>
+                                        <div class="subTitle">
+                                            <span style="vertical-align: middle;">
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div class="promContent">
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="bd">
+                            <div class="prdtTage">
+                                <span class="m-itemTag" style="display: none;">
+                                </span>
+                            </div>
+                            <h4 class="name">
+                                <a href="javascript:;">
+                                    <span></span>
+                                    <span>告别啃食尴尬，秘制无骨凤爪 108克</span>
+                                </a>
+                            </h4>
+                            <p class="price">
+                                <span class="retailPrice">
+                                    <span>￥</span>
+                                    <span>22</span>
+                                </span>
+                                <span class="counterPrice">
+                                    <span></span>
+                                    <span></span>
+                                </span>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="m-product popularItem m-popularItem down">
+                        <div class="hd">
+                            <a href="javascript:;">
+                                <div style="width: 100%;height: 100%;">
+                                    <img src="./img/d3fa5.webp" alt="" class="img white">
+                                </div>
+                                <div class="colorNum" style="display: none;">
+                                </div>
+                                <div class="promBanner" style="background-image: url(img/promBanner.png); display: none;">
+                                    <div class="promTitle" style="background-image: url(img/promtitle.webp);">
+                                        <div class="title">
+                                            <span></span>
+                                        </div>
+                                        <div class="subTitle">
+                                            <span style="vertical-align: middle;">
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div class="promContent">
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="bd">
+                            <div class="prdtTage">
+                                <span class="m-itemTag" style="display: none;">
+                                </span>
+                            </div>
+                            <h4 class="name">
+                                <a href="javascript:;">
+                                    <span></span>
+                                    <span>移动话费 多种面额充值</span>
+                                </a>
+                            </h4>
+                            <p class="price">
+                                <span class="retailPrice">
+                                    <span>￥</span>
+                                    <span>49.9</span>
+                                </span>
+                                <span class="counterPrice">
+                                    <span></span>
+                                    <span></span>
+                                </span>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="m-product popularItem m-popularItem down">
+                        <div class="hd">
+                            <a href="javascript:;">
+                                <div style="width: 100%;height: 100%;">
+                                    <img src="./img/a840c.webp" alt="" class="img white">
+                                </div>
+                                <div class="colorNum" >2个规格</div>
+                                <div class="promBanner" style="background-image: url(img/promBanner.png);">
+                                    <div class="promTitle" style="background-image: url(img/promtitle.webp);">
+                                        <div class="title">
+                                            <span>新人特价</span>
+                                        </div>
+                                        <div class="subTitle">
+                                            <span style="vertical-align: middle;">
+                                                ￥15起
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div class="promContent">
+                                       正在抢购中
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="bd">
+                            <div class="prdtTage">
+                                <span class="m-itemTag appfreshmanTag">
+                                   新人特价
+                                </span>
+                            </div>
+                            <h4 class="name">
+                                <a href="javascript:;">
+                                    <span></span>
+                                    <span>来自泰式餐厅的味道，鲜脆泰式蟹片</span>
+                                </a>
+                            </h4>
+                            <p class="price">
+                                <span class="retailPrice">
+                                    <span>￥</span>
+                                    <span>15</span>
+                                </span>
+                                <span class="counterPrice">
+                                    <span>￥</span>
+                                    <span>28</span>
+                                </span>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="m-product popularItem m-popularItem down">
+                        <div class="hd">
+                            <a href="javascript:;">
+                                <div style="width: 100%;height: 100%;">
+                                    <img src="./img/热销4.webp" alt="" class="img white">
+                                </div>
+                                <div class="colorNum" style="display: block;">
+                                    4色可选
+                                </div>
+                                <div class="promBanner">
+                                    <div class="promTitle">
+                                        <div class="title">
+                                            <span></span>
+                                        </div>
+                                        <div class="subTitle">
+                                            <span style="vertical-align: middle;">
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div class="promContent">
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="bd">
+                            <div class="prdtTage">
+                                <span class="m-itemTag" style="display: none;">
+                                </span>
+                            </div>
+                            <h4 class="name">
+                                <a href="javascript:;">
+                                    <span></span>
+                                    <span>轻弹云朵居家拖鞋</span>
+                                </a>
+                            </h4>
+                            <p class="price">
+                                <span class="retailPrice">
+                                    <span>￥</span>
+                                    <span>9.9</span>
+                                </span>
+                                <span class="counterPrice">
+                                    <span></span>
+                                    <span></span>
+                                </span>
+                            </p>
+                        </div>
                     </div>
                 </div>
-                <div class="m-product popularItem m-popularItem">
-                    <div class="hd">
-                        <a href="javascript:;">
-                            <div style="width: 100%;height: 100%;">
-                                <img src="./img/甄选爆款.webp" alt="" class="img white">
-                            </div>
-                            <div class="colorNum" style="display: none;">
-                            </div>
-                            <div class="promBanner" style="background-image: url(img/promBanner.png);">
-                                <div class="promTitle" style="background-image: url(img/promtitle.webp);">
-                                    <div class="title">
-                                        <span>限时购</span>
-                                    </div>
-                                    <div class="subTitle">
-                                        <span style="vertical-align: middle;">
-                                            ￥399起
-                                        </span>
-                                    </div>
-                                </div>
-                                <div class="promContent">
-                                    仅剩4天
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="bd">
-                        <div class="prdtTage">
-                            <span class="m-itemTag">
-                                限时购
-                            </span>
-                            <span class="m-itemTag">
-                                满赠
-                            </span>
-                        </div>
-                        <h4 class="name">
+            </section>
+            <section>
+                <div class="showContainer" id="showContainer">
+                    <div class="m-product popularItem m-popularItem">
+                        <div class="hd">
                             <a href="javascript:;">
-                                <span></span>
-                                <span>紫外线除螨，N620除螨仪</span>
+                                <div style="width: 100%;height: 100%;">
+                                    <img src="./img/093cc.webp" alt="" class="img white">
+                                </div>
+                                <div class="colorNum" style="display: none;">
+                                </div>
+                                <div class="promBanner" style="background-image: url(img/promBanner.png); display: none;">
+                                    <div class="promTitle" style="background-image: url(img/promtitle.webp);">
+                                        <div class="title">
+                                            <span></span>
+                                        </div>
+                                        <div class="subTitle">
+                                            <span style="vertical-align: middle;"></span>
+                                        </div>
+                                    </div>
+                                    <div class="promContent"></div>
+                                </div>
                             </a>
-                        </h4>
-                        <p class="price">
-                            <span class="retailPrice">
-                                <span>￥</span>
-                                <span>399</span>
-                            </span>
-                            <span class="counterPrice">
-                                <span>￥</span>
-                                <span>499</span>
-                            </span>
-                        </p>
+                        </div>
+                        <div class="bd">
+                            <div class="prdtTage">
+                                <span class="m_itemTag"></span>
+                            </div>
+                            <h4 class="name">
+                                <a href="javascript:;">
+                                    <span></span>
+                                    <span>【浙江专供】一次性日常防护口罩</span>
+                                </a>
+                            </h4>
+                            <p class="price">
+                                <span class="retailPrice">
+                                    <span>￥</span>
+                                    <span>80</span>
+                                </span>
+                                <span class="counterPrice">
+                                    <span></span>
+                                    <span></span>
+                                </span>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="m-product popularItem m-popularItem">
+                        <div class="hd">
+                            <a href="javascript:;">
+                                <div style="width: 100%;height: 100%;">
+                                    <img src="./img/355e0.webp" alt="" class="img white">
+                                </div>
+                                <div class="colorNum" >2个口味</div>
+                                <div class="promBanner" style="background-image: url(img/promBanner.png); display: none;">
+                                    <div class="promTitle" style="background-image: url(img/promtitle.webp);">
+                                        <div class="title">
+                                            <span></span>
+                                        </div>
+                                        <div class="subTitle">
+                                            <span style="vertical-align: middle;"> </span>
+                                        </div>
+                                    </div>
+                                    <div class="promContent"></div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="bd">
+                            <div class="prdtTage">
+                                <span class="m-itemTag" style="display: none;"></span>
+                            </div>
+                            <h4 class="name">
+                                <a href="javascript:;">
+                                    <span></span>
+                                    <span>多层手撕，天然酵母面包</span>
+                                </a>
+                            </h4>
+                            <p class="price">
+                                <span class="retailPrice">
+                                    <span>￥</span>
+                                    <span>16</span>
+                                </span>
+                                <span class="counterPrice">
+                                    <span></span>
+                                    <span></span>
+                                </span>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="m-product popularItem m-popularItem">
+                        <div class="hd">
+                            <a href="javascript:;">
+                                <div style="width: 100%;height: 100%;">
+                                    <img src="./img/6fc85.webp" alt="" class="img white">
+                                </div>
+                                <div class="colorNum" >2个口味</div>
+                                <div class="promBanner">
+                                    <div class="promTitle">
+                                        <div class="title">
+                                            <span></span>
+                                        </div>
+                                        <div class="subTitle">
+                                            <span style="vertical-align: middle;">
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div class="promContent">
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="bd">
+                            <div class="prdtTage">
+                                <span  class="m-itemTag appfreshmanTag">满88减10</span>
+                            </div>
+                            <h4 class="name">
+                                <a href="javascript:;">
+                                    <span></span>
+                                    <span>无添加蔗糖，苏打饼干360克</span>
+                                </a>
+                            </h4>
+                            <p class="price">
+                                <span class="retailPrice">
+                                    <span>￥</span>
+                                    <span>12.8</span>
+                                </span>
+                                <span class="counterPrice">
+                                    <span></span>
+                                    <span></span>
+                                </span>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="m-product popularItem m-popularItem">
+                        <div class="hd">
+                            <a href="javascript:;">
+                                <div style="width: 100%;height: 100%;">
+                                    <img src="./img/056e0.webp" alt="" class="img white">
+                                </div>
+                                <div class="colorNum">2个规格</div>
+                                <div class="promBanner">
+                                    <div class="promTitle">
+                                        <div class="title">
+                                            <span></span>
+                                        </div>
+                                        <div class="subTitle">
+                                            <span style="vertical-align: middle;">
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div class="promContent">
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="bd">
+                            <div class="prdtTage">
+                                <span class="m-itemTag">满88减10</span>
+                            </div>
+                            <h4 class="name">
+                                <a href="javascript:;">
+                                    <span></span>
+                                    <span>甜糯板栗仁 50克</span>
+                                </a>
+                            </h4>
+                            <p class="price">
+                                <span class="retailPrice">
+                                    <span>￥</span>
+                                    <span>6</span>
+                                </span>
+                                <span class="counterPrice">
+                                    <span></span>
+                                    <span></span>
+                                </span>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="m-product popularItem m-popularItem down">
+                        <div class="hd">
+                            <a href="javascript:;">
+                                <div style="width: 100%;height: 100%;">
+                                    <img src="./img/ef494.webp" alt="" class="img white">
+                                </div>
+                                <div class="colorNum" style="display:none;"> </div>
+                                <div class="promBanner">
+                                    <div class="promTitle">
+                                        <div class="title">
+                                            <span></span>
+                                        </div>
+                                        <div class="subTitle">
+                                            <span style="vertical-align: middle;">
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div class="promContent">
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="bd">
+                            <div class="prdtTage">
+                                <span class="m-itemTag" style="display: none;">
+                                </span>
+                            </div>
+                            <h4 class="name">
+                                <a href="javascript:;">
+                                    <span></span>
+                                    <span>满满肉粒，口口满足，火腿猪肉罐头 198克*6</span>
+                                </a>
+                            </h4>
+                            <p class="price">
+                                <span class="retailPrice">
+                                    <span>￥</span>
+                                    <span>129</span>
+                                </span>
+                                <span class="counterPrice">
+                                    <span></span>
+                                    <span></span>
+                                </span>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="m-product popularItem m-popularItem down">
+                        <div class="hd">
+                            <a href="javascript:;">
+                                <div style="width: 100%;height: 100%;">
+                                    <img src="./img/58b7b.webp" alt="" class="img white">
+                                </div>
+                                <div class="colorNum">10色可选</div>
+                                <div class="promBanner" style="background-image: url(img/promBanner.png); display: none;">
+                                    <div class="promTitle" style="background-image: url(img/promtitle.webp);">
+                                        <div class="title">
+                                            <span></span>
+                                        </div>
+                                        <div class="subTitle">
+                                            <span style="vertical-align: middle;">
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div class="promContent">
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="bd">
+                            <div class="prdtTage">
+                                <span class="m-itemTag" style="display: none;">
+                                </span>
+                            </div>
+                            <h4 class="name">
+                                <a href="javascript:;">
+                                    <span></span>
+                                    <span>玩趣彩虹四季拖鞋</span>
+                                </a>
+                            </h4>
+                            <p class="price">
+                                <span class="retailPrice">
+                                    <span>￥</span>
+                                    <span>24.9</span>
+                                </span>
+                                <span class="counterPrice">
+                                    <span></span>
+                                    <span></span>
+                                </span>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="m-product popularItem m-popularItem down">
+                        <div class="hd">
+                            <a href="javascript:;">
+                                <div style="width: 100%;height: 100%;">
+                                    <img src="./img/1b8e4.webp" alt="" class="img white">
+                                </div>
+                                <div class="colorNum">家庭装</div>
+                                <div class="promBanner" style="background-image: url(img/promBanner.png);display: none;">
+                                    <div class="promTitle" style="background-image: url(img/promtitle.webp);">
+                                        <div class="title">
+                                            <span>母亲节特惠</span>
+                                        </div>
+                                        <div class="subTitle">
+                                            <span style="vertical-align: middle;">
+                                                ￥759
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div class="promContent">
+                                        仅剩4天
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="bd">
+                            <div class="prdtTage">
+                                <span class="m-itemTag appfreshmanTag" style="display: none;"></span>
+                            </div>
+                            <h4 class="name">
+                                <a href="javascript:;">
+                                    <span></span>
+                                    <span>无酒精无漂白，弱酸性手口湿巾 80抽</span>
+                                </a>
+                            </h4>
+                            <p class="price">
+                                <span class="retailPrice">
+                                    <span>￥</span>
+                                    <span>172</span>
+                                </span>
+                                <span class="counterPrice">
+                                    <span></span>
+                                    <span></span>
+                                </span>
+                            </p>
+                        </div>
                     </div>
                 </div>
-                <div class="m-product popularItem m-popularItem">
-                    <div class="hd">
-                        <a href="javascript:;">
-                            <div style="width: 100%;height: 100%;">
-                                <img src="./img/热销3.webp" alt="" class="img white">
-                            </div>
-                            <div class="colorNum" style="display: block;">
-                                木浆材质
-                            </div>
-                            <div class="promBanner">
-                                <div class="promTitle">
-                                    <div class="title">
-                                        <span></span>
-                                    </div>
-                                    <div class="subTitle">
-                                        <span style="vertical-align: middle;">
-                                        </span>
-                                    </div>
-                                </div>
-                                <div class="promContent">
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="bd">
-                        <div class="prdtTage">
-                            <span>
-                            </span>
-                        </div>
-                        <h4 class="name">
-                            <a href="javascript:;">
-                                <span></span>
-                                <span>16件装 避免细菌残留懒人抹布超值组</span>
-                            </a>
-                        </h4>
-                        <p class="price">
-                            <span class="retailPrice">
-                                <span>￥</span>
-                                <span>176</span>
-                            </span>
-                            <span class="counterPrice">
-                                <span></span>
-                                <span></span>
-                            </span>
-                        </p>
-                    </div>
-                </div>
-                <div class="m-product popularItem m-popularItem">
-                    <div class="hd">
-                        <a href="javascript:;">
-                            <div style="width: 100%;height: 100%;">
-                                <img src="./img/热销4.webp" alt="" class="img white">
-                            </div>
-                            <div class="colorNum" style="display: block;">
-                                4色可选
-                            </div>
-                            <div class="promBanner">
-                                <div class="promTitle">
-                                    <div class="title">
-                                        <span></span>
-                                    </div>
-                                    <div class="subTitle">
-                                        <span style="vertical-align: middle;">
-                                        </span>
-                                    </div>
-                                </div>
-                                <div class="promContent">
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="bd">
-                        <div class="prdtTage">
-                            <span class="m-itemTag" style="display: none;">
-                            </span>
-                        </div>
-                        <h4 class="name">
-                            <a href="javascript:;">
-                                <span></span>
-                                <span>轻弹云朵居家拖鞋</span>
-                            </a>
-                        </h4>
-                        <p class="price">
-                            <span class="retailPrice">
-                                <span>￥</span>
-                                <span>9.9</span>
-                            </span>
-                            <span class="counterPrice">
-                                <span></span>
-                                <span></span>
-                            </span>
-                        </p>
-                    </div>
-                </div>
-                <div class="m-product popularItem m-popularItem down">
-                    <div class="hd">
-                        <a href="javascript:;">
-                            <div style="width: 100%;height: 100%;">
-                                <img src="./img/热销5.webp" alt="" class="img white">
-                            </div>
-                            <div class="colorNum" style="display: block;">
-                                2个口味
-                            </div>
-                            <div class="promBanner">
-                                <div class="promTitle">
-                                    <div class="title">
-                                        <span></span>
-                                    </div>
-                                    <div class="subTitle">
-                                        <span style="vertical-align: middle;">
-                                        </span>
-                                    </div>
-                                </div>
-                                <div class="promContent">
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="bd">
-                        <div class="prdtTage">
-                            <span class="m-itemTag" style="display: none;">
-                            </span>
-                        </div>
-                        <h4 class="name">
-                            <a href="javascript:;">
-                                <span></span>
-                                <span>告别啃食尴尬，秘制无骨凤爪 108克</span>
-                            </a>
-                        </h4>
-                        <p class="price">
-                            <span class="retailPrice">
-                                <span>￥</span>
-                                <span>22</span>
-                            </span>
-                            <span class="counterPrice">
-                                <span></span>
-                                <span></span>
-                            </span>
-                        </p>
-                    </div>
-                </div>
-                <div class="m-product popularItem m-popularItem down">
-                    <div class="hd">
-                        <a href="javascript:;">
-                            <div style="width: 100%;height: 100%;">
-                                <img src="./img/热销6.webp" alt="" class="img white">
-                            </div>
-                            <div class="colorNum" style="display: none;">
-                            </div>
-                            <div class="promBanner" style="background-image: url(img/promBanner.png); display: none;">
-                                <div class="promTitle" style="background-image: url(img/promtitle.webp);">
-                                    <div class="title">
-                                        <span></span>
-                                    </div>
-                                    <div class="subTitle">
-                                        <span style="vertical-align: middle;">
-                                        </span>
-                                    </div>
-                                </div>
-                                <div class="promContent">
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="bd">
-                        <div class="prdtTage">
-                            <span class="m-itemTag" style="display: none;">
-                            </span>
-                        </div>
-                        <h4 class="name">
-                            <a href="javascript:;">
-                                <span></span>
-                                <span>长粒香大米 5千克</span>
-                            </a>
-                        </h4>
-                        <p class="price">
-                            <span class="retailPrice">
-                                <span>￥</span>
-                                <span>50</span>
-                            </span>
-                            <span class="counterPrice">
-                                <span></span>
-                                <span></span>
-                            </span>
-                        </p>
-                    </div>
-                </div>
-                <div class="m-product popularItem m-popularItem down">
-                    <div class="hd">
-                        <a href="javascript:;">
-                            <div style="width: 100%;height: 100%;">
-                                <img src="./img/热销7.webp" alt="" class="img white">
-                            </div>
-                            <div class="colorNum" style="display: none;">
-                            </div>
-                            <div class="promBanner" style="background-image: url(img/promBanner.png);display: none;">
-                                <div class="promTitle" style="background-image: url(img/promtitle.webp);">
-                                    <div class="title">
-                                        <span>母亲节特惠</span>
-                                    </div>
-                                    <div class="subTitle">
-                                        <span style="vertical-align: middle;">
-                                            ￥759
-                                        </span>
-                                    </div>
-                                </div>
-                                <div class="promContent">
-                                    仅剩4天
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="bd">
-                        <div class="prdtTage">
-                            <span class="m-itemTag appfreshmanTag">
-                                APP新人特价包邮￥36
-                            </span>
-                        </div>
-                        <h4 class="name">
-                            <a href="javascript:;">
-                                <span></span>
-                                <span>清新英国梨香 强力去污酵素洗衣液3kg/1kg</span>
-                            </a>
-                        </h4>
-                        <p class="price">
-                            <span class="retailPrice">
-                                <span>￥</span>
-                                <span>49.9</span>
-                            </span>
-                            <span class="counterPrice">
-                                <span></span>
-                                <span></span>
-                            </span>
-                        </p>
-                    </div>
-                </div>
-            </div>
+            </section>
+          
         </div>
     </div>
     <!-- 限时购 -->
@@ -4603,11 +4909,11 @@
                         <div class="line"></div>
                         <div class="screenEndTips">距离结束还剩</div>
                         <div class="m-countDown">
-                            <span class="w-cd j-hour">02</span>
+                            <span class="w-cd j-hour">00</span>
                             <span class="colon">:</span>
-                            <span class="w-cd j-minute">19</span>
+                            <span class="w-cd j-minute">00</span>
                             <span class="colon">:</span>
-                            <span class="w-cd j-second">37</span>
+                            <span class="w-cd j-second">00</span>
                         </div>
                         <span class="seeMoreBtn">查看全部 ></span>
                     </div>

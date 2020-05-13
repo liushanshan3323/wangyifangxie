@@ -603,11 +603,14 @@ a {
     clear: both;
 }
 
-.m-indexPopularItem .tabList .innerWrap .item.active {
+.m-indexPopularItem .tabList .innerWrap li.active {
     border-bottom: 2px solid #b4a078;
 }
+.m-indexPopularItem .tabList .innerWrap li.active a{
+    color:  #b4a078;
+}
 
-.m-indexPopularItem .tabList .innerWrap .item {
+.m-indexPopularItem .tabList .innerWrap li{
     text-align: center;
     float: left;
     font-size: 14px;
@@ -617,7 +620,7 @@ a {
     margin-right: 55px;
 }
 
-.m-commonTab .innerWrap .item {
+.m-commonTab .innerWrap li {
     position: relative;
     z-index: 2;
     float: left;
@@ -625,11 +628,14 @@ a {
     cursor: pointer;
 }
 
-.m-indexPopularItem .showContainer {
+.m-indexPopularItem section{
     clear: both;
     overflow: hidden;
+    display: none;
 }
-
+.m-indexPopularItem section.active{
+    display: block;
+}
 .showContainer .m-popularItem:first-child {
     width: 390px;
     height: 570px;
@@ -644,6 +650,12 @@ a {
     float: left;
     margin-left: 10px;
     text-align: center;
+}
+.m-product .hd {
+    position: relative;
+    margin-bottom: 8px;
+    overflow: hidden;
+    background-color: #f4f4f4;
 }
 
 .m-popularItem:first-child .hd {
@@ -759,7 +771,7 @@ a {
 }
 
 .m-popularItem .bd .name {
-    width: 136px;
+    width: 138px;
     margin: 0 auto 4px;
 }
 
@@ -1625,12 +1637,7 @@ button {
     background-color: #CC9756;
 }
 
-.m-product .hd {
-    position: relative;
-    margin-bottom: 8px;
-    overflow: hidden;
-    background-color: #f4f4f4;
-}
+
 
 .m-indexCates .m-indexCate>.bd .itemList .item .m-product img {
     width: 265px;
@@ -1641,7 +1648,6 @@ button {
     width: 245px;
     height: 245px;
     transition: transform 1s;
-    background-color: #f4f4f4;
     color: #f4f4f4;
     display: block;
     margin: 0 auto;
@@ -1660,20 +1666,6 @@ button {
 
 .m-product.showScene:hover .imgScene {
     opacity: 1;
-}
-
-.m-product .hd .colorNum {
-    position: absolute;
-    top: 10px;
-    left: 10px;
-    height: 20px;
-    font-size: 12px;
-    color: #a7936e;
-    border: 1px solid #b3a07d;
-    border-radius: 5px;
-    padding: 0 4px;
-    line-height: 18px;
-    background-color: #f4f0ea;
 }
 
 .m-product.showScene:hover .colorNum {
