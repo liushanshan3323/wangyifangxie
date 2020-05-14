@@ -1197,6 +1197,7 @@ html.csstransitions .m-flashSale {
     top: 0;
     left: 0;
     display: block;
+
 }
 
 .m-saleCenter .saleCenterList .m-indexCarousel .m-focus .wrap {
@@ -1452,13 +1453,54 @@ html.csstransitions .m-flashSale {
     position: relative;
     overflow: hidden;
 }
+.banner{
+	position: relative;
+	margin: 0 auto;
+	width: 1090px;
+	height: 310px;
+	overflow: hidden;
+}
 
-.m-focusSlick .slick-prev {
+.banner .wrappers {
+	position: relative;
+	width: 100%;
+	height: 100%;
+}
+
+.banner .wrappers .slides {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+
+	/* 初始默认样式 */
+	z-index: 0;
+	opacity: 0;
+
+	/* 动画 */
+	transition: opacity .3s;
+}
+
+/* 默认展示第一张图片 */
+.banner .wrappers .slides:nth-child(1) {
+	z-index: 1;
+	opacity: 1;
+}
+
+.banner .wrappers .slides img {
+	width: 100%;
+	height: 100%;
+}
+
+
+.banner.slick-prev {
     left: 10px;
 }
 
-.m-focusSlick .slick-next,
-.m-focusSlick .slick-prev {
+.banner .slick-next,
+.banner .slick-prev {
     position: absolute;
     width: 50px;
     height: 50px;
@@ -1505,17 +1547,18 @@ button {
     border: 0;
 }
 
-.m-focusSlick .slick-next:hover,
-.m-focusSlick .slick-prev:hover {
+.banner .slick-next:hover,
+.banner .slick-prev:hover {
     background-color: #B19D79;
 }
 
 
-.m-focusSlick .slick-next {
+.banner .slick-next {
     right: 10px;
 }
 
-.m-focusSlick .slick-dots {
+
+.banner .slick-dots {
     position: absolute;
     bottom: 4px;
     display: block;
@@ -1523,9 +1566,10 @@ button {
     padding: 0;
     list-style: none;
     text-align: center;
+    z-index: 5;
 }
 
-.m-focusSlick .slick-dots li {
+.banner .slick-dots li {
     position: relative;
     display: inline-block;
     width: 8px;
@@ -1533,16 +1577,17 @@ button {
     margin: 0 8px 10px;
     padding: 0;
     cursor: pointer;
+    z-index: 5;
 }
 
-.m-focusSlick .slick-dots li.slick-active button {
+.banner .slick-dots li.slick-active button {
     box-shadow: 0 0 0 4px #dfcead;
     background: #a7936e;
     border-radius: 500px;
     border: none;
 }
 
-.m-focusSlick .slick-dots li button {
+.banner .slick-dots li button {
     font-size: 0;
     line-height: 0;
     display: block;
@@ -1663,9 +1708,9 @@ button {
     width: 245px;
     height: 245px;
 }
-
 .m-product.showScene:hover .imgScene {
     opacity: 1;
+    background: #f4f4f4;
 }
 
 .m-product.showScene:hover .colorNum {
@@ -1707,6 +1752,13 @@ button {
     font-size: 12px;
     background-color: #e36844;
 }
+.new.m-itemTag {
+    background-color: #b4a078;
+}
+.appfreshmanTag.m-itemTag {
+    background: #DD1A21;
+    color: #fff;
+}
 
 .m-product .name {
     width: 166px;
@@ -1716,7 +1768,11 @@ button {
     display: -webkit-box;
     overflow: hidden;
 }
-
+.m-flashSaleProduct .rt .itemName, .m-product .name {
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    word-break: break-all;
+}
 .m-product .price {
     font-size: 13px;
     line-height: 13px;
@@ -1916,6 +1972,13 @@ button {
     margin-right: 15px;
     color: #b4a078;
     float: right;
+}
+.m-indexComment .slick-next:hover,.m-indexComment .slick-prev:hover{
+    background-color: #CC9756;
+}
+.total-track{
+    width: 7300px;
+    overflow: hidden;
 }
 
 .m-indexComment .m-product .m-comment .comment-content {
