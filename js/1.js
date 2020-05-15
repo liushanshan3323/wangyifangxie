@@ -131,7 +131,6 @@ function move(ele) {
     let step = 0,
         prev = 0,
         len = slidesList.length;
-    console.log(len)
 
     //实现切换
     function change() {
@@ -201,44 +200,70 @@ move('.banner6');
 move('.banner7');
 move('.banner8');
 let Products = (function Products() {
-    bd = document.querySelector('.slickWidth'),
+    let bd = document.querySelector('.slickWidth'),
         itemList = bd.querySelector('.itemList'),
-        total_track = itemList.querySelector('.total-track'),
-        item = total_track.querySelectorAll('.item'),
+        total_track = document.querySelector('.total-track'),
         slick_prev = bd.querySelector('.slick-prev'),
         slick_next = bd.querySelector('.slick-next');
-    let step = 0,
-        len = item.length;
+    let interval = 3000,
+        autoTimer = null;
+    total_track.innerHTML += total_track.innerHTML;
+    utils.css(total_track, 'width', utils.css(total_track, 'width') * 2);
+
 
     function autoMove() {
-        if (step === (len-3)) {
-            step = 0;
-            total_track.style.transitionDuration = '3s';
-            total_track.style.left = '0px';
-            total_track.offsetWidth;
+        let curL = utils.css(total_track, 'left');
+        curL -= 365;
+        utils.css(total_track, {
+            left: curL
+        });
+        if (Math.abs(total_track.offsetLeft) >= utils.css(total_track, 'width') / 2) {
+            utils.css(total_track, 'left', 0);
         }
-        step++;
-        total_track.style.transitionDuration = '0.3s';
-        total_track.style.left = -step * 365 + 'px';
-        console.log(step);
 
     }
+    autoTimer = setInterval(autoMove, interval);
+
+
+    itemList.onmouseenter = function () {
+        clearInterval(autoTimer);
+    };
+    itemList.onmouseleave = function () {
+        autoTimer = setInterval(autoMove, interval);
+    };
     slick_next.onclick = autoMove;
     slick_prev.onclick = function () {
-        if (step === 0) {
-            step = 18;
-            total_track.style.transitionDuration = '0s';
-            total_track.style.left = -step * 365 + 'px';
-            total_track.offsetWidth;
+        let curL = utils.css(total_track, 'left');
+        curL += 365;
+        utils.css(total_track, {
+            left: curL
+        });
+        if (Math.abs(total_track.offsetLeft) <= 0) {
+           utils.css(total_track, 'left', -utils.css(total_track, 'width') / 2);
         }
-        step--;
-        total_track.style.transitionDuration = '0.3s';
-        total_track.style.left = -step * 365+ 'px';
-    };
+        console.log(Math.abs(total_track.offsetLeft));
+    }
     return {
         init() {
             autoMove();
         }
     }
+
 })();
 Products.init();
+
+
+
+// let  total_track  = document.querySelector('.total-track ');
+// total_track.innerHTML += total_track.innerHTML;
+// utils.css(total_track , 'width', utils.css(total_track, 'width') * 2);
+// setInterval(() => {
+//     let curL = utils.css(total_track, 'left');
+//     curL -= 365;
+//     utils.css(total_track, {
+//         left: curL
+//     });
+//     if (Math.abs(total_track.offsetLeft) >= utils.css(total_track, 'width') / 2) {
+//         utils.css(total_track, 'left', 0);
+//     }
+// }, 1000);
