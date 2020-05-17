@@ -239,7 +239,7 @@ let Products = (function Products() {
             left: curL
         });
         if (Math.abs(total_track.offsetLeft) <= 0) {
-           utils.css(total_track, 'left', -utils.css(total_track, 'width') / 2);
+            utils.css(total_track, 'left', -utils.css(total_track, 'width') / 2);
         }
         console.log(Math.abs(total_track.offsetLeft));
     }
@@ -251,19 +251,39 @@ let Products = (function Products() {
 
 })();
 Products.init();
+// 左右固定侧边栏
+function addEvent(type, fn) {
+    if (window.attachEvent) { //ie
+        window.attachEvent('on' + type, function () {
+            fn.call(window);
+        })
+    } else {
+        window.addEventListener(type, fn, false);
+    }
+}
+addEvent('scroll', function () {
+    let sT = document.documentElement.scrollTop;
+    if (sT >= 500) {
+        box1.className = "m-indexSideBar fixed";
+    } else {
+        box1.className = "m-indexSideBar";
+    }
+});
 
-
-
-// let  total_track  = document.querySelector('.total-track ');
-// total_track.innerHTML += total_track.innerHTML;
-// utils.css(total_track , 'width', utils.css(total_track, 'width') * 2);
-// setInterval(() => {
-//     let curL = utils.css(total_track, 'left');
-//     curL -= 365;
-//     utils.css(total_track, {
-//         left: curL
-//     });
-//     if (Math.abs(total_track.offsetLeft) >= utils.css(total_track, 'width') / 2) {
-//         utils.css(total_track, 'left', 0);
-//     }
-// }, 1000);
+addEvent('scroll', function () {
+    let sT = document.documentElement.scrollTop;
+    if (sT >= 500) {
+        box2.className = "side fixed";
+    } else {
+        box2.className = "side";
+    }
+});
+addEvent('scroll', function () {
+    let sT = document.documentElement.scrollTop;
+    if (sT >= 180) {
+        box.className = "top-nav fixed";
+        box.style.display="block";
+    } else {
+        box.className = "top-nav";
+    }
+});
